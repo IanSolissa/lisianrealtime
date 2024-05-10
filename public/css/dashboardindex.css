@@ -1,0 +1,28 @@
+.kontainer-dashboardindex{
+/* display: none; */
+width: 100%;
+display: flex;
+flex-direction: row;
+overflow-x: hidden;
+/* background-color: black; */
+
+}
+.kontent1{
+    /* background-color: red; */
+    width: 20%;
+    max-height: 100vh;
+height: auto;
+scrollbar-width: none;
+scroll-behavior: smooth;
+overflow-y: scroll;
+}
+.kontent2{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-height: 100vh;
+    overflow-y: hidden;
+    height: auto;
+
+}

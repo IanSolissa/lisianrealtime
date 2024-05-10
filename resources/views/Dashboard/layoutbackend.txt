@@ -1,0 +1,38 @@
+ <div style="margin: 20px">
+                <h1>Tambahkan Kontak</h1>
+        <form action="/lisianchat/contact" method="POST">
+            @csrf
+            
+            {{-- $table->string('number');
+            $table->unsignedBigInteger('id_kontak');
+            $table->foreign('id_kontak')->references('id')->on('penggunas');
+            $table->unsignedBigInteger('last_messages')->nullable();
+            $table->foreign('last_messages')->references('id')->on('messages'); --}}
+            <input type="text" name="id_kontak" value="1" placeholder="Nama User yang di pakai">
+            <input type="text" name="number" placeholder="tambhakan nomor">
+            
+            <button type="submit">submit</button>
+        </form>
+    </div>
+            <div style="margin: 20px">
+                <h1>Membuat User</h1>
+        <form action="/user" method="POST">
+            @csrf
+            <input type="text" name="name" placeholder="Nama User">
+            <input type="text" name="number" placeholder="number">
+            <input type="password" name="password" placeholder="password">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    
+    <div style="margin: 20px">
+        <h1>Mengirim Pesan</h1>
+        <form action="/lisianchat" method="POST">
+            @csrf
+            <input type="text" name="message" placeholder="message">
+            <input type="number" name="user_id" placeholder="user_id">
+            <input type="text" name="number" value="085774059573" >
+            <input type="number" name="penerima_id" placeholder="Penerima">
+            <button type="submit">submit</button>
+        </form>
+    </div>
