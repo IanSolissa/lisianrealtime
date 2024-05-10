@@ -5,7 +5,7 @@ window.Pusher = Pusher;
 
 window.Echo = new Echo({
 
-    socketid:Window.Echo.socketid,
+    // socketid:Window.Echo.socketid,
     broadcaster: 'reverb',
     key: import.meta.env.VITE_REVERB_APP_KEY,
     wsHost: import.meta.env.VITE_REVERB_HOST,
